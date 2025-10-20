@@ -177,7 +177,7 @@ class plt_one_addpt_onclick:
         #print(f"points : {bcid.rectangles[0].get_bbox().get_points()}")  #[[xmin,ymin],[xmax,ymax]]
 
         if hasattr(bcid,'rectangles'):
-            # matplotlib 
+            # Buttons has attribute rectangles
             h = bcid.rectangles[0].get_height()
             bcid.rectangles[0].set_height(3*h)
 
@@ -188,7 +188,7 @@ class plt_one_addpt_onclick:
             bcid.lines[0][1].set_ydata([ymin,ymax])
 
         elif hasattr(bcid,'boxes'):
-            # mpl_toolkits
+            # Button has attribute boxes
             h = bcid.boxes[0].get_height()
             bcid.boxes[0].set_height(3*h)
 
